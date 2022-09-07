@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-color: #554994;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.navigation {
+  padding: 2rem;
+  background-color: #00000079;
+
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+  .navigation {
+    flex-direction: column;
+
+    padding: 7rem;
+    height: 100%;
+    transform: translateX(-100rem) rotate(-0.5turn);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transition: all 0.6s ease-in-out;
+  }
+
+  .display-nav {
+    transform: translateX(0) rotate(0);
+  }
+
+  .hamburger {
+    /* background-color: white; */
+    height: 5rem;
+    width: 5rem;
+
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .line-1,
+  .line-2,
+  .line-3 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .line-2 {
+    transition-duration: 0.1s;
+  }
+
+  .line-1-toggled {
+    transform: rotate(45deg) translateX(0.6rem) translateY(0.7rem);
+    width: 70%;
+  }
+
+  .line-2-toggled {
+    visibility: hidden;
+  }
+
+  .line-3-toggled {
+    transform: rotate(-45deg) translateX(1rem) translateY(-1rem);
+    width: 70%;
+  }
+}

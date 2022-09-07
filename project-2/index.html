@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="2-style.css" />
+    <title>Accordion</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="accordion" data-theme="html">
+        <div class="header">
+          <h2>
+            <button>
+              <span class="header__title">HTML</span>
+
+              <div class="header__indicator">
+                <i class="fa-solid fa-plus plus"></i>
+                <i class="fa-solid fa-minus minus"></i>
+              </div>
+            </button>
+          </h2>
+        </div>
+
+        <div class="content">
+          <div>
+            <p>
+              The HyperText Markup Language or HTML is the standard markup
+              language for documents designed to be displayed in a web browser.
+              It can be assisted by technologies such as Cascading Style Sheets
+              and scripting languages such as JavaScript.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="accordion" data-theme="css">
+        <div class="header">
+          <h2>
+            <button>
+              <span class="header__title">CSS</span>
+
+              <div class="header__indicator">
+                <i class="fa-solid fa-plus plus"></i>
+                <i class="fa-solid fa-minus minus"></i>
+              </div>
+            </button>
+          </h2>
+        </div>
+
+        <div class="content">
+          <div>
+            <p>
+              Cascading Style Sheets is a style sheet language used for
+              describing the presentation of a document written in a markup
+              language such as HTML or XML. CSS is a cornerstone technology of
+              the World Wide Web, alongside HTML and JavaScript.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="accordion" data-theme="javascript">
+        <div class="header">
+          <h2>
+            <button>
+              <span class="header__title">JavaScript</span>
+
+              <div class="header__indicator">
+                <i class="fa-solid fa-plus plus"></i>
+                <i class="fa-solid fa-minus minus"></i>
+              </div>
+            </button>
+          </h2>
+        </div>
+
+        <div class="content">
+          <div>
+            <p>
+              Cascading Style Sheets is a style sheet language used for
+              describing the presentation of a document written in a markup
+              language such as HTML or XML. CSS is a cornerstone technology of
+              the World Wide Web, alongside HTML and JavaScript.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="2-app.js"></script>
+  </body>
+</html>
